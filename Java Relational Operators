@@ -1,0 +1,15 @@
+public class relational {
+    public static void main(String[] args) {
+        boolean res;
+        res = (10 == 10);
+        System.out.println(res);
+        res = (5 > 5);
+        System.out.println(res);
+        res = (10 >= 5);
+        System.out.println(res);
+        res = (10 <= 5);
+        System.out.println(res);
+        res = (2 != 2);
+        System.out.println(res);
+    }
+}
