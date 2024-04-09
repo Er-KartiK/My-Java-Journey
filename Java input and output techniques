@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class diffprint {
+    public static void main(String[] args) {
+        int x = 10;
+
+        // Using print to show the given string in the console
+        System.out.println("This is the output line ");
+        // To concatanate value with the string
+        System.out.println("The value of variable x is= " + x);
+        // The line will print in same line for print and next line for println
+        System.out.println("First string");   //Println("s") prints same as printf("s\n")
+        System.out.print("Second string");
+        // print using format specifiers like c
+        System.out.printf("\nThe value of x= %d and Pi= %f\n", x, 22f / 7);
+        Scanner input = new Scanner(System.in);
+        x = input.nextInt();
+        System.out.println("The data read is " + x);
+        input.close();
+    }
+}
