@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class diffprint {
+    public static void main(String[] args) {
+        System.out.println("Using comments in java");
+        //This is single line comment
+
+        /*This is multi line comment
+         holds multiple lines of comments
+
+         holds multiple lines of comments      
+         */ 
+
+
+        /*
+         * Other way of showing multi line comments
+         * 
+         */
+    }
+    //Comments will be ignored by compiler and will not be read or compiled
