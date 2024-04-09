@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class string {
+    public static void main(String[] args) {
+        char[] charstring = { 'S', 't', 'r', 'i', 'n', 'g' };
+        Scanner input = new Scanner(System.in);
+        String str = new String(charstring);
+        String str2, str3;
+        System.out.println("The string is = " + str);
+
+
+        // Read a single word (token)
+        str = input.next();
+        System.out.println("String = " + str);
+
+        // Consume the newline character left by next()
+        input.nextLine();   //if not used then the left strings will be printed and not consumed
+
+        // Read a full line of input
+        System.out.print("Using nextLine = ");
+        str2 = input.nextLine();
+        System.out.println(str2);
+
+        // Set custom delimiter to period (.)
+        input.useDelimiter("\\.");
+        str3 = input.next();
+        System.out.println("Using Delimiter = " + str3);
+
+        str = "JAVA Strings";
+        System.out.println("Direct assigning= " + str);
+        str = "String" + " " + "Concatenate";
+        System.out.println("Concatenating three strings inot one= " + str);
+        input.close();
+    }
+}
+******************************************************************************** O U T P U T **********************************************************************************************
+The string is = String
+Hello how are you                 //INPUT of next()
+String = Hello
+Using nextLine = It Ends With Us  //INPUT of nextLine()
+It Ends With Us
+It.Ends.with.US                   //INPUT using fullstop as a delimiter
+Using Delimiter = It
+Direct assigning= JAVA Strings
+Concatenating three strings inot one= String Concatenate
