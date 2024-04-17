@@ -1,0 +1,46 @@
+package kartikproject;
+import java.util.Scanner;
+public class string_functions {
+	public static void main(String[] args) {
+ 		String str1="HELLO"; String str2="hello";
+		System.out.printf("The length of string 1 is "+str1.length()+"\nThe length of String 2 is "+str2.length()+"\n");
+		//To check if stri ngs are equal are not (Case sensitive).
+		if(str1.equals(str2)) {
+			System.out.println("String 1 is equal to string 2(Case sensitive)");
+		}
+		else {
+			System.out.println("String 1 is not equal to string 2(Case sensitive)");
+		}
+		//To check if strings are equal are not (Case insensitive).
+		if(str1.equalsIgnoreCase(str2)) {
+			System.out.println("String 1 is equal to string 2(Case sensitive)");
+		}
+		else {
+			System.out.println("String 1 is not equal to string 2(Case sensitive)");
+		}
+		//To Find character aat given index.
+		System.out.println("The Character at position 4 is "+ str1.charAt(4));
+		//Comparing strings lexicographically
+		System.out.println("Distance of "+str1 +" and "+str2+" is " + str1.compareTo(str2));
+		System.out.println("Distance of "+str2 +" and "+str1+" is " + str2.compareTo(str1));
+		str1="kartikisapdffile";
+		str2="JAVA string functions";
+		//To check whether the given string starts ends or starts with the given substring or not
+		System.out.println("The string "+str1+" starts with kartik: "+str1.startsWith("kartik"));
+		System.out.println("The string "+ str1+" ends with e: "+str1.endsWith("e"));
+		String str3="This is a sentence";
+		//convert in lowercase
+		System.out.println("Coverting String to lowercase: "+str3.toLowerCase());
+		//Cover to Upper case
+		System.out.println("Coverting string to uppper case: "+str3.toUpperCase());
+		 str3="          Kartik            ";
+		 System.out.println("Using trim function: "+str3.trim());
+		 String str4="JAva string functions";
+		 System.out.println("Returning substring: "+str4.substring(4,7));
+		 str4="kartik";
+		 //Using replace function
+		 System.out.println("Replacing String characters of  Kartik: "+str4.replace("tik", "ki"));
+		 System.out.println("Replacing String characters of  Kartik: "+str4.replace("k", "xyz"));
+		 
+	}
+}
