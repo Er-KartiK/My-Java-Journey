@@ -1,0 +1,26 @@
+class Student{
+    private String name;
+    private int rn;
+    private double perc;
+    public Student(String name,int rn, double perc)
+    {
+        this.name=name;
+        this.rn=rn;
+        this.perc=perc;
+    }
+    public void Setdetails(String name,int rn,double perc){
+        this.name=name;
+        this.rn=rn;
+        this.perc=perc;
+    }
+    public void Displaydata() {
+        System.out.println(name+" "+rn+" "+perc);
+    }
+    }
+public class Mystudent {
+    public static void main(String[] args)
+    {
+        Student s1 = new Student("Kartik",17090,90.5);
+        s1.Displaydata();
+    }
+}
