@@ -1,0 +1,24 @@
+class Myclass{
+    private int a,b;
+    public Myclass(int a int b){ // Parameterized function
+        this.a=a; 
+        this.b=b;
+    }
+    public Myclass(){ // Non parameterized constructor
+        this.(0,0); // Calls parameterized function
+    } 
+    public void setData(int a , int b){
+        this.a=a;
+        this.b=b;
+    }
+    public void display(){
+        System.out.printf("The value of a= %d and b=%d",a,b);
+    }
+}
+public class thisKeyword {
+    public static void main(String[] args){
+        Myclass myobj=new Myclass();
+        myobj.display();
+        myobj.setData(23,45);
+    }
+}
