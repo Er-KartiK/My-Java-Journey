@@ -1,0 +1,35 @@
+class StaticDemo {
+    int var;
+    static int staticVar;
+
+    public StaticDemo() {
+        var = 0;
+    }
+
+    public static void setStaticVar(int x) {
+        staticVar = x;
+    }
+
+    public void increase() {
+        var++;
+        staticVar++;
+    }
+
+    public void display() {
+        System.out.println("Static variable = " + staticVar);
+        System.out.println("Value of non-static var = " + var);
+    }
+}
+
+public class JavaLab {
+    public static void main(String[] args) {
+        StaticDemo st1 = new StaticDemo();
+        StaticDemo st2 = new StaticDemo();
+        st1.increase();
+        st1.increase();
+        st1.display();
+        st2.display();
+        st2.increase();
+        st2.display();
+    }
+}
