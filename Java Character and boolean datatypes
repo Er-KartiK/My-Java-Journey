@@ -1,0 +1,19 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class HelloWorld {
+    public static void main(String[] args) {
+    char Mychar;
+    boolean mybool;
+    Mychar= 'A';
+    System.out.println(Mychar);
+    Mychar=70;
+        System.out.println(Mychar);
+    Mychar= '\u0041'; //hexadecimal unicode for integer(0000H to FFFFH)
+    System.out.println(Mychar);
+    mybool= true;
+    System.out.println(mybool);
+    mybool=100; // throws error(cannot convert from int to boolean)
+        
+    }
+}
