@@ -1,0 +1,40 @@
+package kartikproject;
+
+class BelowException extends Exception{
+	BelowException(){
+	super("Age is under 18");
+	}
+}
+class Application {
+	private String name;
+	private String course;
+	private int age;
+	public Application(String name,String course) {
+		this.name=name;
+		this.course=course;
+		this.age=18;
+	}
+	public void SetAge(int age)  throws BelowException {
+		if(age<18)
+			throw new BelowException();
+		else
+			this.age=age;
+	}
+	public void Displaydata() {
+		System.out.println("The name is "+name+" \nThe course is "+course+"\n Age is "+age);
+	}
+}
+ public class javalab {
+	 public static void main(String[] args) {
+		 Application a1 = new Application("Kartik","Computer Science");
+		 Application a2= new Application("JAVA","Programming");
+		 a1.Displaydata();
+		 try {
+			 a2.SetAge(17);
+		 } catch (BelowException e) {
+			 System.out.println(e.getMessage());
+			 e.printStackTrace();
+		 }
+	 }
+	 
+ }
